@@ -1,0 +1,86 @@
+//= template/header
+
+<section class="main">
+  <div class="swiper main-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide main-slide">
+        <div class="container">
+          <div class="main-slide__content">
+            <h1 class="main-slide__title">Как бизнесу сохранять<br> IT-кадры на фоне кризиса</h1>
+            <p class="main-slide__desc">Инструменты, которые могут использовать <br class="mobile"> компании <br
+                class="desktop">для удержания сотрудников
+            </p>
+            <a href="#" class="btn main-slide__btn">Подробнее</a>
+          </div>
+          <img src="./img/main.png" class="main-slide__img">
+        </div>
+      </div>
+      <div class="swiper-slide main-slide">
+        <div class="container">
+          <div class="main-slide__content">
+            <h1 class="main-slide__title">Как бизнесу сохранять<br> IT-кадры на фоне кризиса</h1>
+            <p class="main-slide__desc">Инструменты, которые могут использовать <br class="mobile"> компании <br
+                class="desktop">для удержания сотрудников
+            </p>
+            <a href="#" class="btn main-slide__btn">Подробнее</a>
+          </div>
+          <img src="./img/main.png" class="main-slide__img">
+        </div>
+      </div>
+      <div class="swiper-slide main-slide">
+        <div class="container">
+          <div class="main-slide__content">
+            <h1 class="main-slide__title">Как бизнесу сохранять<br> IT-кадры на фоне кризиса</h1>
+            <p class="main-slide__desc">Инструменты, которые могут использовать <br class="mobile"> компании <br
+                class="desktop">для удержания сотрудников
+            </p>
+            <a href="#" class="btn main-slide__btn">Подробнее</a>
+          </div>
+          <img src="./img/main.png" class="main-slide__img">
+        </div>
+      </div>
+    </div>
+    <div class="container pos-r">
+      <div class="swiper-pagination container"></div>
+    </div>
+  </div>
+</section>
+
+<section class="articles">
+  <div class="container">
+    <div class="articles__header">
+      <div class="selector">
+        <div class="selector__icon">
+          <img src="./img/icons/user.svg">
+        </div>
+        <select class="selector__select" name="author">
+          <option value="" selected>Выбор автора</option>
+        </select>
+        <div class="selector__arr">
+          <img src="./img/icons/chevron-down.svg">
+        </div>
+      </div>
+
+      <div class="filter-date">
+        <input type="text" placeholder="От" name="from" class="filter-date__input" readonly>
+        <img src="./img/icons/minus.svg" class="filter-date__sep">
+        <input type="text" placeholder="До" name="to" class="filter-date__input" readonly>
+      </div>
+    </div>
+    <div class="articles__content">
+      <!-- articles -->
+      <div class="loader-wrapper" id="load-articles">
+        <span class="loader"></span>
+      </div>
+    </div>
+    <div class="articles__not-found hide">
+      <p>Ничего не найдено</p>
+    </div>
+  </div>
+</section>
+
+<script id="template-article" type="text/template">
+  //= template/article
+</script>
+
+//= template/footer

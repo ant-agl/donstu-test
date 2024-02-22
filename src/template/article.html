@@ -1,0 +1,8 @@
+<a href="#" class="article" data-date="{{= it.publishedAt }}">
+  <p class="article__date">{{= it.date }}</p>
+  <h3 class="article__title">{{= it.title }}</h3>
+  <p class="article__desc">{{= it.description }}</p>
+  {{? it.author }}
+  <p class="article__author">{{= it.author }}</p>
+  {{?}}
+</a>
