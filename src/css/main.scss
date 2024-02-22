@@ -10,6 +10,11 @@ body * {
 
 body {
   background-color: var(--bg-color);
+  padding-top: 91px;
+
+  @media (max-width: 475px) {
+    padding-top: 59px;
+  }
 }
 
 :root {
@@ -101,19 +106,28 @@ img {
 }
 
 .header {
-  padding: 29px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 99;
 
-  @media (max-width: 415px) {
-    padding: 16px 0;
+  &__content {
+    padding: 29px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 475px) {
+      padding: 16px 0;
+    }
   }
 
   &__logo {
     width: 120px;
 
-    @media (max-width: 415px) {
+    @media (max-width: 475px) {
       width: 97px;
     }
   }
@@ -134,13 +148,13 @@ img {
     .mobile {
       display: none;
 
-      @media (max-width:415px) {
+      @media (max-width: 475px) {
         display: block;
       }
     }
 
     .desktop {
-      @media (max-width:415px) {
+      @media (max-width: 475px) {
         display: none;
       }
     }
